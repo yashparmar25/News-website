@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Read</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+  </head>
+  <body>
+    
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <a href="index.html"><img id="p"src="logo.jpg" alt="company logo" />
+          </a>
+        </a>
+        <b><h1>YH News</h1></b>
+        <div class="nav-links">
+          <ul class="flex">
+            
+            <li
+            class="hover-link nav-item"
+            id="cricket"
+            onclick="onNavItemClick('cricket')"1>
+            Cricket 
+            </li>
+          
+          
+          <li
+          class="hover-link nav-item"
+          id="finance"
+          onclick="onNavItemClick('finance')"
+          >
+          Finance
+         </li>
+         
+         
+            <li
+              class="hover-link nav-item"
+              id="india politics"
+              onclick="onNavItemClick('india politics')"
+            >
+              Politics 
+            </li>
+          
+          
+            <li
+              class="hover-link nav-item"
+              id="technology"
+              onclick="onNavItemClick('technology')"
+            >
+              Technology
+            </li>
+          
+           
+            <li
+              class="hover-link nav-item"
+              id="international"
+              onclick="onNavItemClick('international')"
+            >
+              International
+              
+            </li> 
+          
+
+
+            <li><span>More</span>
+              <ul class="drop-down">
+                
+                <li
+              class="hover-link nav-item"
+              id="lifestyle"
+              onclick="onNavItemClick('lifestyle')"
+              style="color: black"
+            >
+          Lifestyle
+            </li>
+          
+            
+            <li
+              class="hover-link nav-item"
+              id="bollywood"
+              onclick="onNavItemClick('bollywood')"
+              style="color: black"
+            >
+          Bollywood
+            </li>
+         
+            <li
+              class="hover-link nav-item"
+              id="crime"
+              onclick="onNavItemClick('crime')"
+              style="color: black"
+            >
+          Crime
+            </li>
+          
+           
+            <li
+              class="hover-link nav-item"
+              id="rashifal"
+              onclick="onNavItemClick('rashifal')"
+              style="color: black"
+            >
+              Horoscope
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="rashifal"
+              
+            >
+             <a href="contact.html" id="u" style="color: black"> Feedback </a>
+            </li>
+          
+              </ul>             
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="Search The News"
+          />
+          &nbsp; <!--sapce-->
+          <button id="search-button" class="search-button"><b>Search</b></button>
+        </div>
+      </div>
+    </nav>
+  
+    
+
+    <br>
+    <br>
+    <br>
+    
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            saepe quis voluptatum quisquam vitae doloremque facilis molestias
+            quae ratione cumque!
+          </p>
+        </div>
+      </div>
+    </template>
+      <script src="script.js"> </script>
+    <br>  
+     <footer>
+      &copy; 2023 Yash Parmar & Harshiv Patel created YH News 
+    </footer>
+  </body>
+</html>
